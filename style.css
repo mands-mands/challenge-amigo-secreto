@@ -8,6 +8,7 @@
     --color-white: #FFFFFF;
 }
 
+
 /* Estilos gerais */
 * {
     margin: 0;
@@ -159,4 +160,19 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Responsividade */
+@media (max-width: 622px) {
+    .header-banner{
+        flex-direction: column;
+    }
+    .main-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .input-section{
+        justify-content: center;
+        align-items: center;
+    }
 }
