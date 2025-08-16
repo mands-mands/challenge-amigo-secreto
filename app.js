@@ -1,6 +1,9 @@
 let participantes = [];
+let amigoInput = document.getElementById(`amigo`);
+amigoInput.focus();
 
 function adicionarAmigo(){
+    resultado.innerHTML = ``;
     let amigo = document.getElementById(`amigo`).value;
     if (amigo == ``){
         alert(`Por favor, insira um nome válido.`)
@@ -10,6 +13,9 @@ function adicionarAmigo(){
     }
     let listaAmigos = document.getElementById(`listaAmigos`);
     listaAmigos.innerHTML += `<li>${amigo}</li>`
+    amigoInput.value = ``;
+    amigoInput.focus();
+    
 }
 
 function sortearAmigo(){
@@ -24,5 +30,5 @@ function sortearAmigo(){
         listaAmigos.innerHTML = ``;
         participantes = [];
     }
-    
+    amigoInput.focus();
 }
