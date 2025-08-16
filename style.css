@@ -24,6 +24,12 @@ body {
     align-items: center;
 }
 
+#limparLista { /*Escondendo o botao de nova lista*/
+    display: none;
+}
+
+
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -89,8 +95,10 @@ body {
 }
 
 .button-container {
-    width: 300px;
+    max-width: 600px;
+    display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 /* Estilos de entrada de texto */
@@ -147,15 +155,17 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 20px;
+    white-space: nowrap;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .button-draw:hover {
