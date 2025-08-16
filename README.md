@@ -8,27 +8,35 @@ O desafio consistia em implementar a **lógica em JavaScript** para um site de *
 
 ---
 
-## 💡 Como funciona o site
+## ⚙️ Como funciona
 
-O site de **Amigo Secreto** permite que os usuários adicionem participantes e façam o sorteio de forma interativa.  
+O site de **Amigo Secreto** permite que os usuários adicionem participantes e realizem o sorteio de forma dinâmica e interativa.
 
-### 1️⃣ Adicionar participantes
-- O usuário digita o nome de um participante no campo de input.  
-- Ao clicar no botão "Adicionar", a função `adicionarAmigo()` é executada:  
+### ➕ Adicionar Participantes
+- O usuário digita o nome no campo de texto.  
+- Ao clicar em **Adicionar**, a função `adicionarAmigo()` é executada:  
   - Verifica se o campo não está vazio.  
   - Adiciona o nome à lista de participantes (`participantes[]`).  
-  - Atualiza a lista visível de participantes na tela (`<ul>`).  
-  - Limpa e foca novamente o campo de input para facilitar a digitação de novos nomes.  
+  - Atualiza a lista visual exibida na tela.  
+  - Limpa o campo e retorna o foco para o input, agilizando a digitação de novos nomes.
 
-### 2️⃣ Sortear o amigo secreto
-- Ao clicar no botão "Sortear", a função `sortearAmigo()` é chamada:  
-  - Verifica se a lista de participantes não está vazia.  
-  - Calcula aleatoriamente um índice dentro do array `participantes` usando `Math.random()`.  
-  - Exibe o resultado do sorteio na tela, mostrando o nome do **amigo secreto** sorteado.  
-  - Limpa a lista de participantes e a lista visual (`<ul>`), permitindo iniciar um novo sorteio.  
-  - O input é novamente focado para inserir novos participantes.  
+### 🎲 Sortear Amigo
+- Ao clicar no botão **Sortear**, a função `sortearAmigo()` é executada:  
+  - Confere se a lista de participantes não está vazia.  
+  - Sorteia aleatoriamente um participante usando `Math.floor(Math.random() * tamanhoLista)`.  
+  - Exibe o resultado do sorteio na tela.  
+  - Altera o botão para **Sortear de novo**, permitindo realizar outro sorteio sem precisar reiniciar a lista.  
+  - Exibe o botão **Nova Lista** para permitir criar uma nova lista.
 
-### 3️⃣ Comportamento extra
+### 🗑️ Nova Lista
+- Ao clicar no botão **Nova Lista**, a função `novaLista()` é executada:  
+  - Limpa o array `participantes` e a lista visual.  
+  - Reseta o botão de sortear para o estado inicial (**Sortear amigo**).  
+  - Limpa o resultado do último sorteio.  
+  - Mantém o foco no input para facilitar adicionar novos nomes.
+
+
+### ✨ Comportamento extra
 - Alerts aparecem caso o usuário tente adicionar um nome vazio ou sortear sem participantes.  
 - O input é constantemente focado para tornar a experiência rápida e fluida.  
 
