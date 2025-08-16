@@ -34,6 +34,18 @@ O site de **Amigo Secreto** permite que os usuários adicionem participantes e f
 
 ---
 
+## 📸 Demonstração
+Veja o site funcionando
+
+![Amigo Secreto Demo](assets/challenge.gif)
+
+---
+
+## 🌐 Teste você mesmo
+🎁 Clique aqui para testar o site: [site-amigo-secreto](https://mands-mands.github.io/challenge-amigo-secreto/)
+
+--- 
+
 ## 🛠️ Tecnologias Utilizadas
 - **HTML5** → Estrutura do site (fornecido no desafio).  
 - **CSS3** → Estilização do site (fornecido no desafio).  
@@ -41,8 +53,15 @@ O site de **Amigo Secreto** permite que os usuários adicionem participantes e f
 
 ---
 
-## 📸 Demonstração
-Veja o site funcionando
+## 📱 Responsividade
+O layout do site foi ajustado para ser **responsivo**, garantindo que o Amigo Secreto funcione bem em desktops, tablets e smartphones.
 
-![Amigo Secreto Demo](assets/challenge.gif)
+---
+
+## 🤝 Créditos
+- [Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/) 
+- [Alura](https://www.alura.com.br/) 
+- Desenvolvido por [mands-mands](https://github.com/mands-mands)
+
+
 
